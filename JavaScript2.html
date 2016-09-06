@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta charset="utf-8">
+	<title>CSS External Styles</title>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	
+		
+		<script>
+		document.write("Project done by: Md. Sadekuzzaman   <br>");
+		var $a = prompt("Enter Your Salary:");
+		var $b = parseInt($a);
+		var $result;
+		
+		if($b<5000 && $b>0){
+			$result=$b;
+			document.write("Input Salary :"+$b+"<br>");
+			document.write("Your Current Salary is :"+$result+"<br>");
+			document.write("Your Current increment is :0 <br>");
+			
+		}
+		else if($b<0){
+			document.write("Input Salary :"+$b+"<br>");
+			document.write("Below Range<br>");
+		}
+		else if($b>=5000 && $b<=6000){
+			$result=($b*0.1)+$b;
+			document.write("Input Salary :"+$b+"<br>");
+			document.write("Your Current Salary is :"+$result+"<br>");
+			document.write("Your Current increment is :"+($b*0.1)+"<br>");
+		}
+		else if($b>6000 && $b<7500){
+			$result=($b*0.1)+$b+1500;
+			document.write("Input Salary :"+$b+"<br>");
+			document.write("Your Current Salary is :"+$result+"<br>");
+			document.write("Your Current increment is :"+(($b*0.1)+1500)+"<br>");
+		}
+		else{
+			document.write("Input Salary :"+$b+"<br>");
+			document.write("Out Of Range<br>");
+		}
+			
+			
+			
+		</script>
+	</body>
+</html>
